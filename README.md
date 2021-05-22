@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [SOL](https://github.com/shockiu/card-grid-ugly)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [LIVE](https://shockiu.github.io/card-grid-ugly/)
 
 ## My process
 
