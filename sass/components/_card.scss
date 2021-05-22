@@ -1,0 +1,62 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25rem;
+    background-color: $dark-desaturated-blue;
+    border-radius: .30rem;
+    transition: all .7s;
+    @include break('small') {
+        grid-template-areas: "img"
+                             "desc";
+        grid-template-columns: 1fr;
+        grid-template-rows: 30rem 18rem;
+    }
+    @include break('lg-small') {
+        grid-template-rows: 15rem 32rem;
+    }
+    @include break('x-small') {
+        grid-template-columns: 1fr;
+        grid-template-rows: 15rem 32rem;
+       
+    }
+}
+
+.card__body {
+    padding-top: 1.2rem;
+    padding-left: 3rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    @include break('small') {
+        grid-area: desc;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    @include break('x-small') {
+        grid-area: desc;
+    }
+}
+
+.card__figure {
+    width: 100%;
+    background-image: url('../images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: .30rem;
+    @include break('small') {
+        grid-area: img;
+    }
+    @include break('x-small') {
+        grid-area: img;
+    }
+}
+
+.card__figure::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $soft-violet;
+}

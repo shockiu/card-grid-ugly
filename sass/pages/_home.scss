@@ -1,0 +1,15 @@
+.home {
+    margin: 6.2rem;
+    @include break('lg-small') {
+        margin-top: 5rem;
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+        margin-bottom: 5rem;
+    }
+    @include break('x-small') {
+        margin-top: 6rem;
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+        margin-bottom: 6rem;
+    }
+}

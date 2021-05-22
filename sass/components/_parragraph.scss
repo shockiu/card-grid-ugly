@@ -1,0 +1,83 @@
+.parragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    font-family: $font-family-inter;
+    color: $white;
+}
+
+.parragraph__header {
+    transition: all .7s;
+    @include break("small") {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    @include break("x-small") {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
+.key-word {
+    color: $soft-violet-key;
+}
+
+.parragraph__desc {
+    transition: all .7s;
+    color: $slightly-transparent-white-m-p;
+    font-size: 13px;
+    line-height: 1.8;
+    @include break("small") {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    @include break("x-small") {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 15px;
+    }
+}
+
+.parragraph__stats {
+    display: flex;
+    justify-content: space-between;
+    transition: all .7s;
+    @include break('small') {
+        margin-top: 2rem;
+    }
+    @include break('lg-small') {
+        height: 12rem;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include break("x-small") {
+        height: 15rem;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+.figures-company {
+    display: flex;
+    flex-direction: column;
+}
+
+.figures-company__heading {
+    color: $white;
+    font-family: $font-family-inter;
+    font-weight: $font-weigth-inter-700;
+    @include break("x-small") {
+        font-size: 20px;
+    }
+}
+
+.figures-company__desc {
+    text-transform: uppercase;
+    color: $slightly-transparent-white-m-p;
+    font-family: $font-family-lexend-deca;
+    font-weight: $font-weigth-lexend-deca-400;
+    font-size: 12px;
+}

@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/* PRIMARY */
+/*SECONDARY*/
+/*FONT-SIZE*/
+/*FONT-FAMILIES*/
+/*FONT-WEIGHT*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #090b1a; }
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25rem;
+  background-color: #1b1938;
+  border-radius: .30rem;
+  transition: all .7s; }
+  @media (max-width: 900px) {
+    .card {
+      grid-template-areas: "img" "desc";
+      grid-template-columns: 1fr;
+      grid-template-rows: 30rem 18rem; } }
+  @media (max-width: 570px) {
+    .card {
+      grid-template-rows: 15rem 32rem; } }
+  @media (max-width: 375px) {
+    .card {
+      grid-template-columns: 1fr;
+      grid-template-rows: 15rem 32rem; } }
+
+.card__body {
+  padding-top: 1.2rem;
+  padding-left: 3rem;
+  padding-right: 5rem;
+  padding-bottom: 2rem; }
+  @media (max-width: 900px) {
+    .card__body {
+      grid-area: desc;
+      padding-top: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem; } }
+  @media (max-width: 375px) {
+    .card__body {
+      grid-area: desc; } }
+
+.card__figure {
+  width: 100%;
+  background-image: url("../images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: .30rem; }
+  @media (max-width: 900px) {
+    .card__figure {
+      grid-area: img; } }
+  @media (max-width: 375px) {
+    .card__figure {
+      grid-area: img; } }
+
+.card__figure::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(83, 6, 132, 0.596); }
+
+.parragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  color: white; }
+
+.parragraph__header {
+  transition: all .7s; }
+  @media (max-width: 900px) {
+    .parragraph__header {
+      font-size: 1.8rem;
+      text-align: center; } }
+  @media (max-width: 375px) {
+    .parragraph__header {
+      font-size: 1.7rem;
+      text-align: center; } }
+
+.key-word {
+  color: #aa5cdb; }
+
+.parragraph__desc {
+  transition: all .7s;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  line-height: 1.8; }
+  @media (max-width: 900px) {
+    .parragraph__desc {
+      font-size: 1.1rem;
+      text-align: center; } }
+  @media (max-width: 375px) {
+    .parragraph__desc {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 15px; } }
+
+.parragraph__stats {
+  display: flex;
+  justify-content: space-between;
+  transition: all .7s; }
+  @media (max-width: 900px) {
+    .parragraph__stats {
+      margin-top: 2rem; } }
+  @media (max-width: 570px) {
+    .parragraph__stats {
+      height: 12rem;
+      text-align: center;
+      flex-direction: column;
+      justify-content: space-evenly; } }
+  @media (max-width: 375px) {
+    .parragraph__stats {
+      height: 15rem;
+      text-align: center;
+      flex-direction: column;
+      justify-content: space-evenly; } }
+
+.figures-company {
+  display: flex;
+  flex-direction: column; }
+
+.figures-company__heading {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700; }
+  @media (max-width: 375px) {
+    .figures-company__heading {
+      font-size: 20px; } }
+
+.figures-company__desc {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 12px; }
+
+.hero {
+  display: grid;
+  place-items: center; }
+
+.attribution {
+  margin: 2rem;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif; }
+
+.attribution__link {
+  color: #3e52a3; }
+
+.home {
+  margin: 6.2rem; }
+  @media (max-width: 570px) {
+    .home {
+      margin-top: 5rem;
+      margin-left: 1.4rem;
+      margin-right: 1.4rem;
+      margin-bottom: 5rem; } }
+  @media (max-width: 375px) {
+    .home {
+      margin-top: 6rem;
+      margin-left: 1.4rem;
+      margin-right: 1.4rem;
+      margin-bottom: 6rem; } }

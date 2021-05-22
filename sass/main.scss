@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+@import './abstracts/breakpoints';
+@import './abstracts/variables';
+
+@import './base/reset';
+
+@import './components/card';
+@import './components/parragraph';
+
+@import './layout/hero';
+@import './layout/footer';
+
+@import './pages/home';
